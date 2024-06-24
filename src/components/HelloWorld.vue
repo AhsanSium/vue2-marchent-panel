@@ -1,6 +1,22 @@
 <template>
-  <div class="hello">
-    <h1 class="header text-red-400 text-3xl font-bold underline" > {{ msg }} </h1>
+  <div class="hello px-10">
+    <div class="flex justify-around">
+      <div class="w-1/2 side-bg ">
+        
+      </div>
+      <div class="flex-col content-center w-1/2 justify-center">
+        <div class="w-4/5">
+          <h1 class="header text-grey-800 text-3xl font-bold text-left" > {{ msg }} </h1>
+        </div>
+        <div class="w-4/5">
+          <p class="text-grey-800 text-left">
+            A Simple Vue 2 Project created with Vue-Cli, Vue-Router, Tailwindcss.
+            To show Merchant Order List separately
+          </p>
+        </div>
+      </div>
+    </div>
+    
     
   </div>
 </template>
@@ -10,7 +26,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Vue 2 Marchent Panel'
+      msg: 'Vue 2 Merchant Panel'
     }
   }
 }
@@ -18,6 +34,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.side-bg{
+  height: 500px;
+  background: url("https://merchant.p-stageenv.xyz/img/bg.018f7d0e.svg") no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: auto;
+}
 /* .hello{
   text-align: center;
 }
